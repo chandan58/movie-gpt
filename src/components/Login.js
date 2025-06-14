@@ -6,10 +6,10 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_IMAGE } from "../utils/Constants";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -17,7 +17,6 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
   const name = useRef(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleSubmitClick = async () => {
@@ -34,11 +33,9 @@ const Login = () => {
           password.current.value
         );
         const user = userCredential.user;
-        console.log(user);
         await updateProfile(user, {
           displayName: name.current.value || email.current.value,
-          photoURL:
-            "https://www.pikpng.com/pngl/b/417-4172348_testimonial-user-icon-color-clipart.png",
+          photoURL: USER_IMAGE,
         });
         const { uid, displayName, photoURL } = auth.currentUser;
         dispatch(
@@ -50,7 +47,6 @@ const Login = () => {
             photoURL: photoURL,
           })
         );
-        navigate("/browse");
       } else {
         // Sign In
         const userCredential = await signInWithEmailAndPassword(
@@ -59,8 +55,6 @@ const Login = () => {
           password.current.value
         );
         const user = userCredential.user;
-        console.log(user);
-        navigate("/browse");
       }
     } catch (error) {
       setErrorMessage(`${error.message} - ${error.code}`);
