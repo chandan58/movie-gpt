@@ -2,7 +2,6 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieList = ({ title, movies }) => {
-  console.log(movies);
   if (!movies?.length) return null;
   return (
     <div className="text-3xl font-bold px-6">

@@ -30,3 +30,17 @@ export const UPCOMING_API_TMDB = {
   }
 };
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/";
+export const LANGUAGES = [
+    {
+        id: "en",
+        name: "English",
+    },
+    {
+        id: "hi",
+        name: "Hindi",
+    },
+    {
+        id: "es",
+        name: "Spanish",
+    },
+]
