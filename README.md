@@ -1,59 +1,58 @@
 Movie GPT
-Create React App
-Configured TailwindCSS
-Header
-Routing of App
-Login Form
-Sign up Form
-Form Validation
-useRef Hook
-Firebase Setup
-Deploying our app to production
-Create SignUp User Account
-Implement Sign In user Api
-Created Redux Store with userSlice
-Implemented Sign out
-Update Profile
-BugFix: Sign up user displayName and profile picture update
-BugFix: if the user is not logged in -Redirect /browse to Login Page and vice-versa
-Unsubscribed to the onAuthStateChanged callback
+
+1.Create React App
+
+2.Configured TailwindCSS
+
+3.Header
+
+4.Routing of App
+
+5.Login Form
+
+6.Sign up Form
+
+7.Form Validation
+
+8.useRef Hook
+
+9.Firebase Setup
+
+10.Deploying our app to production
+
+11.Create SignUp User Account
+
+12.Implement Sign In user API
+
+13.Created Redux Store with userSlice
+
+14.Implemented Sign out
+
+15.Update Profile
+
+
 Features
-Login/Sign Up
-Sign In /Sign up Form
-redirect to Browse Page
-Browse (after authentication)
-Header
-Main Movie
-Trailer in Background
-Title & Description
-MovieSuggestions
-MovieLists * N
-NetflixGPT
-Search Bar
-Movie Suggestions
-About
-netflix-ai-two.vercel.app
-Resources
- Readme
- Activity
-Stars
- 0 stars
-Watchers
- 1 watching
-Forks
- 0 forks
-Report repository
-Releases
-No releases published
-Packages
-No packages published
-Languages
-JavaScript
-93.2%
- 
-HTML
-5.5%
- 
-CSS
-1.3%
-Footer
+1.Login/Sign Up
+
+1.Sign In / Sign Up Form
+
+3.Redirect to Browse Page
+
+4.Browse (after authentication)
+
+5.Header
+
+6.Main Movie
+
+7.Trailer in Background
+
+8.Title & Description
+
+9.Movie Suggestions
+
+10.Multiple Movie Lists
+
+11.MovieGPT Search Bar
+
+12.Movie Suggestions
+
