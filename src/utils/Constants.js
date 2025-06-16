@@ -44,3 +44,4 @@ export const LANGUAGES = [
         name: "Spanish",
     },
 ]
+export const GEMINI_API_KEY = "AIzaSyCzrmTorj5KxBlQKX_oZqAOpvZRFQvJW94"
