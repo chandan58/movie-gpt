@@ -56,3 +56,6 @@ Features
 
 12.Movie Suggestions
 
+13. Gemini API
+
+
