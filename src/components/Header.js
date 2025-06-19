@@ -81,7 +81,7 @@ const Header = () => {
           </button>
           <img
             className="hidden md:block md:w-12 md:h-12 my-2 "
-            src={user?.photoURL}
+            src= "https://www.citypng.com/public/uploads/preview/hd-man-user-illustration-icon-transparent-png-701751694974843ybexneueic.png"
             alt="userIcon"
           />
           <button
